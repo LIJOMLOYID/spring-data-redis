@@ -14,6 +14,7 @@ import org.springframework.data.redis.repository.configuration.EnableRedisReposi
 @EnableRedisRepositories
 public class RedisConfig {
 	
+	@Bean
 	public JedisConnectionFactory connectionFactory () {
 		RedisStandaloneConfiguration configuration = new RedisStandaloneConfiguration();
 		configuration.setHostName("localhost");
