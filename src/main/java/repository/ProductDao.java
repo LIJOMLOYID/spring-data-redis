@@ -26,5 +26,9 @@ public class ProductDao {
 	public List<Product> findAll() {
 		return template.opsForHash().values(HASH_KEY);
 	}
+	
+	public Product findProductById(int id) {
+		return (Product)template.opsForHash().get(HASH_KEY, id);
+	}
 
 }
