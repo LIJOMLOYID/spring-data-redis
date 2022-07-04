@@ -1,4 +1,4 @@
-package repository;
+package com.thinkpalm.springdataredis.repository;
 
 import java.util.List;
 
@@ -6,6 +6,8 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Repository;
 
 import com.thinkpalm.springdataredis.entity.Product;
+
+
 
 /**
  * @author Lijo M Loyid
